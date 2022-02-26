@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="389bbfa1-55d2-46c6-aadc-90d970f4ed5b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlexaMenu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlexaMenu/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexaMenu/Controllers/WeatherForecastController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Controllers/WeatherForecastController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexaMenu/Models/WeatherForecast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Models/WeatherForecast.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +20,10 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/AlexaMenu/LICENSE" />
+      <option value="$PROJECT_DIR$/AlexaMenu/WeatherForecast.cs" />
+      <option value="$PROJECT_DIR$/AlexaMenu/Models/WeatherForecast.cs" />
+      <option value="$PROJECT_DIR$/AlexaMenu/Program.cs" />
+      <option value="$PROJECT_DIR$/AlexaMenu/Controllers/WeatherForecastController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="25d6cXZK0Jss39UiJclVGHKps6d" />
@@ -72,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1645844696592</updated>
-      <workItem from="1645844717703" duration="2107000" />
+      <workItem from="1645844717703" duration="2789000" />
     </task>
     <servers />
   </component>

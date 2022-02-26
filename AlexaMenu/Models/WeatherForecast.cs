@@ -1,4 +1,6 @@
-namespace AlexaMenu;
+using System;
+
+namespace AlexaMenu.Models;
 
 public class WeatherForecast
 {

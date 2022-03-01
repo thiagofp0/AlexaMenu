@@ -1,3 +1,4 @@
+using AlexaMenu.Providers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AlexaMenu.Controllers
@@ -9,6 +10,7 @@ namespace AlexaMenu.Controllers
         [HttpPost, Route("/menu")]
         public string GetMenu()
         {
+            MenuProvider mp = new MenuProvider();
             return "200 - OK";
         }
     }

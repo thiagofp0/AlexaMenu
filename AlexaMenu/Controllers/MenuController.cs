@@ -1,3 +1,6 @@
+using System;
+using System.Threading.Tasks;
+using AlexaMenu.Providers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AlexaMenu.Controllers
@@ -7,9 +10,10 @@ namespace AlexaMenu.Controllers
     public class MenuController : Controller
     {
         [HttpPost, Route("/menu")]
-        public string GetMenu()
+        public Task<string> GetMenu()
         {
-            return "200 - OK";
+            MenuProvider mp = new MenuProvider();
+            return mp.Init(DateTime.Now);
         }
     }
 }

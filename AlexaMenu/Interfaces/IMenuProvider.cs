@@ -7,7 +7,7 @@ namespace AlexaMenu.Interfaces
 {
     public interface IMenuProvider
     {
-        public Task<string> Init(DateTime date);
+        public Task<string> RequestMenu(DateTime date);
         public Menu GetCurrentMenu();
         public Menu GetNextMenu();
         public Menu GetLastMenu();

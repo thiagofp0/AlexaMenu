@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="389bbfa1-55d2-46c6-aadc-90d970f4ed5b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlexaMenu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlexaMenu/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlexaMenu/AlexaMenu.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/AlexaMenu.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlexaMenu/Controllers/MenuController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Controllers/MenuController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlexaMenu/Interfaces/IMenuProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Interfaces/IMenuProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlexaMenu/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlexaMenu/Providers/MenuProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Providers/MenuProvider.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,9 +47,9 @@
       <option value="$PROJECT_DIR$/AlexaMenu/Providers/HttpClient.cs" />
       <option value="$PROJECT_DIR$/AlexaMenu/Domain/Constants.cs" />
       <option value="$PROJECT_DIR$/AlexaMenu/Domain/ClientBuilder.cs" />
+      <option value="$PROJECT_DIR$/AlexaMenu/Program.cs" />
       <option value="$PROJECT_DIR$/AlexaMenu/Interfaces/IMenuProvider.cs" />
       <option value="$PROJECT_DIR$/AlexaMenu/Providers/MenuProvider.cs" />
-      <option value="$PROJECT_DIR$/AlexaMenu/Program.cs" />
       <option value="$PROJECT_DIR$/AlexaMenu/Controllers/MenuController.cs" />
     </changedPaths>
   </component>
@@ -116,7 +114,8 @@
       <workItem from="1650149782469" duration="14576000" />
       <workItem from="1650329294660" duration="5265000" />
       <workItem from="1650338063363" duration="342000" />
-      <workItem from="1652050643346" duration="2685000" />
+      <workItem from="1652050643346" duration="5947000" />
+      <workItem from="1652751831783" duration="1986000" />
     </task>
     <servers />
   </component>
@@ -141,6 +140,75 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/AlexaMenu/Providers/MenuProvider.cs</url>
+          <line>36</line>
+          <properties documentPath="D:\Thiago\Projetos\C#\AlexaMenu\AlexaMenu\Providers\MenuProvider.cs" initialLine="36" containingFunctionPresentation="method 'RequestMenu'">
+            <startOffsets>
+              <option value="1296" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1367" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/AlexaMenu/Providers/MenuProvider.cs</url>
+          <line>40</line>
+          <properties documentPath="D:\Thiago\Projetos\C#\AlexaMenu\AlexaMenu\Providers\MenuProvider.cs" initialLine="40" containingFunctionPresentation="method 'RequestMenu'">
+            <startOffsets>
+              <option value="1533" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1552" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/AlexaMenu/Controllers/MenuController.cs</url>
+          <line>29</line>
+          <properties documentPath="D:\Thiago\Projetos\C#\AlexaMenu\AlexaMenu\Controllers\MenuController.cs" initialLine="28" containingFunctionPresentation="method 'GetMenu'">
+            <startOffsets>
+              <option value="832" />
+            </startOffsets>
+            <endOffsets>
+              <option value="870" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/AlexaMenu/Controllers/MenuController.cs</url>
+          <line>49</line>
+          <properties documentPath="D:\Thiago\Projetos\C#\AlexaMenu\AlexaMenu\Controllers\MenuController.cs" initialLine="49" containingFunctionPresentation="method 'SwitchIntent'">
+            <startOffsets>
+              <option value="1502" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1545" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/AlexaMenu/Controllers/MenuController.cs</url>
+          <line>36</line>
+          <properties documentPath="D:\Thiago\Projetos\C#\AlexaMenu\AlexaMenu\Controllers\MenuController.cs" initialLine="36" containingFunctionPresentation="method 'GetMenu'">
+            <startOffsets>
+              <option value="1126" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1151" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Type#System.Net.Http.HttpContent" memberName="_bufferedContent" />

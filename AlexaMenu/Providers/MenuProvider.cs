@@ -24,7 +24,7 @@ namespace AlexaMenu.Providers
         private static Menu lastMenu;
         private static Menu nextMenu;
         
-        public async Task<string> RequestMenu(DateTime date)
+        public async Task<object> RequestMenu(DateTime date)
         {
             if (currentMenu == null || lastMenu == null || nextMenu == null)
             {
@@ -37,10 +37,8 @@ namespace AlexaMenu.Providers
                 var response = await client.PostAsync(client.BaseAddress, httpContent);
                 var content = await response.Content.ReadAsStringAsync();
                 var jsonContent = JsonConvert.DeserializeObject(content);
-                
-                Console.WriteLine(jsonContent);
-                
-                return content;
+
+                return jsonContent;
             }
 
             return null;
@@ -48,7 +46,7 @@ namespace AlexaMenu.Providers
 
         public Menu GetCurrentMenu()
         {
-            //return RequestMenu(DateTime.Now);
+            object response = RequestMenu(DateTime.Now);
             return new Menu();
         }
 

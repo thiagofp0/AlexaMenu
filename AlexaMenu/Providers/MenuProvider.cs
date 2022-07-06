@@ -1,18 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Net.Http.Json;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
 using AlexaMenu.Domain;
 using AlexaMenu.Interfaces;
 using AlexaMenu.Models;
-using Microsoft.VisualBasic;
 using Newtonsoft.Json;
-using JsonConverter = Newtonsoft.Json.JsonConverter;
-using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace AlexaMenu.Providers
 {
@@ -24,7 +14,7 @@ namespace AlexaMenu.Providers
         private static Menu lastMenu;
         private static Menu nextMenu;
         
-        public async Task<string> RequestMenu(DateTime date)
+        public async Task<object> RequestMenu(DateTime date)
         {
             if (currentMenu == null || lastMenu == null || nextMenu == null)
             {
@@ -37,18 +27,15 @@ namespace AlexaMenu.Providers
                 var response = await client.PostAsync(client.BaseAddress, httpContent);
                 var content = await response.Content.ReadAsStringAsync();
                 var jsonContent = JsonConvert.DeserializeObject(content);
-                
-                Console.WriteLine(jsonContent);
-                
-                return content;
-            }
 
+                return jsonContent;
+            }
             return null;
         }
 
         public Menu GetCurrentMenu()
         {
-            //return RequestMenu(DateTime.Now);
+            object response = RequestMenu(DateTime.Now);
             return new Menu();
         }
 

@@ -1,18 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Net.Http.Json;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
 using AlexaMenu.Domain;
 using AlexaMenu.Interfaces;
 using AlexaMenu.Models;
-using Microsoft.VisualBasic;
 using Newtonsoft.Json;
-using JsonConverter = Newtonsoft.Json.JsonConverter;
-using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace AlexaMenu.Providers
 {
@@ -40,7 +30,6 @@ namespace AlexaMenu.Providers
 
                 return jsonContent;
             }
-
             return null;
         }
 

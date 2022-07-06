@@ -22,25 +22,19 @@ namespace AlexaMenu.Controllers
             SkillResponse output = new SkillResponse();
             output.Version = "1.0";
             output.Response = new ResponseBody();
-            
-            
-            switch (input.Request.Type)
-            {
-                case "LaunchRequest":
-                    Menu menu = _menuProvider.GetCurrentMenu();
-                    break;
-                case "IntentRequest":
-                    
-                    IntentRequest intentRequest = (IntentRequest) input.Request;
-                    string intentType = intentRequest.Intent.Name;
 
-                    SwitchIntent(intentType);
-                    
-                    break;
-                default:
-                    break;
+            if (input.Request.Type == "LaunchRequest")
+            { 
+                output.Response.OutputSpeech = new PlainTextOutputSpeech("Vrau");
+            }else if (input.Request.Type == "IntentRequest")
+            {
+                output.Response.OutputSpeech = new PlainTextOutputSpeech("Passou no get");
+                //IntentRequest intentRequest = (IntentRequest) input.Request;
+                //string intentType = intentRequest.Intent.Name;
+                //output = SwitchIntent(intentType);
             }
-            output.Response.OutputSpeech = new PlainTextOutputSpeech("Vrau");
+            
+            output.Response.OutputSpeech = new PlainTextOutputSpeech("Passou reto");
             return output;
         }
 
@@ -53,7 +47,7 @@ namespace AlexaMenu.Controllers
             {
                 menu = _menuProvider.GetCurrentMenu();
             }
-
+            Console.Write(menu);
             return output;
         }
     }

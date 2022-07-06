@@ -33,8 +33,6 @@ namespace AlexaMenu.Controllers
                 //string intentType = intentRequest.Intent.Name;
                 //output = SwitchIntent(intentType);
             }
-            
-            output.Response.OutputSpeech = new PlainTextOutputSpeech("Passou reto");
             return output;
         }
 

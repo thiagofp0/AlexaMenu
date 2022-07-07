@@ -11,8 +11,6 @@ namespace AlexaMenu.Interfaces
         public Menu GetCurrentMenu();
         public Menu GetNextMenu();
         public Menu GetLastMenu();
-        public Menu GetMenu(DateTime date);
-        public Meal GetMeal(int mealCode, DateTime date);
-        public Dish GetMainDish(int mealCode, DateTime date);
+        public string GetCurrentMenuOutput();
     }
 }

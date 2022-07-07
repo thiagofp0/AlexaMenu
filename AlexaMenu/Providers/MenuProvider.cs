@@ -1,4 +1,8 @@
+using System;
+using System.Collections.Generic;
+using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Threading.Tasks;
 using AlexaMenu.Domain;
 using AlexaMenu.Interfaces;
 using AlexaMenu.Models;
@@ -48,19 +52,14 @@ namespace AlexaMenu.Providers
             throw new NotImplementedException();
         }
 
-        public Menu GetMenu(DateTime date)
+        public string GetCurrentMenuOutput()
         {
-            throw new NotImplementedException();
-        }
-
-        public Meal GetMeal(int mealCode, DateTime date)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Dish GetMainDish(int mealCode, DateTime date)
-        {
-            throw new NotImplementedException();
+            Menu menu = GetCurrentMenu();
+            var breakfest = menu.Meals.Where(x => x.Id == 3).First().Dishes.Where(x => x.Category.Equals("MINGAU")).First().Name;
+            var lunch = menu.Meals.Where(x => x.Id == 4).First().Dishes.Where(x => x.Category.Equals("PRATO PRINCIPAL")).First().Name;
+            var dinner = menu.Meals.Where(x => x.Id == 5).First().Dishes.Where(x => x.Category.Equals("PRATO PRINCIPAL")).First().Name;
+            var snack = menu.Meals.Where(x => x.Id == 6).First().Dishes.Where(x => x.Category.Equals("RECHEIO PARA PÃO")).First().Name;
+            return $"Hoje no café teremos {breakfest}. No Almoço o prato principal é {lunch}. No jantar, o prato é {dinner}. Já no lanche o recheio do pão é {snack}.";
         }
     }
 }

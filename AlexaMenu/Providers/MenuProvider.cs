@@ -57,8 +57,9 @@ namespace AlexaMenu.Providers
             var breakfest = menu.Meals.Where(x => x.Id == 3).First().Dishes.Where(x => x.Category.Equals("MINGAU")).First().Name;
             var lunch = menu.Meals.Where(x => x.Id == 4).First().Dishes.Where(x => x.Category.Equals("PRATO PRINCIPAL")).First().Name;
             var dinner = menu.Meals.Where(x => x.Id == 5).First().Dishes.Where(x => x.Category.Equals("PRATO PRINCIPAL")).First().Name;
-            var snack = menu.Meals.Where(x => x.Id == 6).First().Dishes.Where(x => x.Category.Equals("RECHEIO PARA P√O")).First().Name;
-            return $"Hoje no cafÈ teremos {breakfest}. No AlmoÁo o prato principal È {lunch}. No jantar, o prato È {dinner}. J· no lanche o recheio do p„o È {snack}.";
+            var snack = menu.Meals.Where(x => x.Id == 6).First().Dishes.Where(x => x.Category.Equals("RECHEIO PARA P√ÉO")).First().Name;
+            return $"Hoje no caf√© teremos {breakfest}. No Almo√ßo o prato principal √© {lunch}. No jantar, o prato √© {dinner}. J√° no lanche o recheio do p√£o √© {snack}.";
+
         }
     }
 }

@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using AlexaMenu.Domain;
 using AlexaMenu.Interfaces;
 using AlexaMenu.Models;
-using AlexaMenu.Utils;
 using Newtonsoft.Json;
 
 namespace AlexaMenu.Providers
@@ -60,6 +59,7 @@ namespace AlexaMenu.Providers
             var dinner = menu.Meals.Where(x => x.Id == 5).First().Dishes.Where(x => x.Category.Equals("PRATO PRINCIPAL")).First().Name;
             var snack = menu.Meals.Where(x => x.Id == 6).First().Dishes.Where(x => x.Category.Equals("RECHEIO PARA PÃO")).First().Name;
             return $"Hoje no café teremos {breakfest}. No Almoço o prato principal é {lunch}. No jantar, o prato é {dinner}. Já no lanche o recheio do pão é {snack}.";
+
         }
     }
 }

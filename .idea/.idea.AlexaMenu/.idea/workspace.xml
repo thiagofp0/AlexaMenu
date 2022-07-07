@@ -4,7 +4,17 @@
     <projectFile>AlexaMenu/AlexaMenu.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="389bbfa1-55d2-46c6-aadc-90d970f4ed5b" name="Default Changelist" comment="Novas modificações" />
+    <list default="true" id="389bbfa1-55d2-46c6-aadc-90d970f4ed5b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/AlexaMenu/Models/ApiContent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlexaMenu/Models/ApiDataObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlexaMenu/Utils/MenuUtils.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlexaMenu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlexaMenu/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexaMenu/Controllers/MenuController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Controllers/MenuController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexaMenu/Interfaces/IMenuProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Interfaces/IMenuProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexaMenu/Models/Meal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Models/Meal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexaMenu/Models/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Models/Menu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexaMenu/Providers/MenuProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Providers/MenuProvider.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +30,18 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7d9a41d47547e1fe7fe548b21ab4de12cc2671170a023bc8c629017837eb5f4/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -114,7 +136,8 @@
       <workItem from="1654491484096" duration="364000" />
       <workItem from="1654491891547" duration="271000" />
       <workItem from="1654492219574" duration="448000" />
-      <workItem from="1657071217846" duration="2197000" />
+      <workItem from="1657071217846" duration="10015000" />
+      <workItem from="1657164980629" duration="8592000" />
     </task>
     <task id="LOCAL-00001" summary="Dividindo operações pelo tipo de Intent Request">
       <created>1652754159873</created>
@@ -130,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657073412226</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Construindo Intent Request">
+      <created>1657073990635</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1657073990635</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,9 +184,27 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Dividindo operações pelo tipo de Intent Request" />
     <MESSAGE value="Novas modificações" />
-    <option name="LAST_COMMIT_MESSAGE" value="Novas modificações" />
+    <MESSAGE value="Construindo Intent Request" />
+    <option name="LAST_COMMIT_MESSAGE" value="Construindo Intent Request" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/AlexaMenu/Controllers/MenuController.cs</url>
+          <line>50</line>
+          <properties documentPath="D:\Thiago\Projetos\C#\AlexaMenu\AlexaMenu\Controllers\MenuController.cs" initialLine="51" containingFunctionPresentation="method 'SwitchIntent'">
+            <startOffsets>
+              <option value="2172" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2172" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Type#System.Net.Http.HttpContent" memberName="_bufferedContent" />

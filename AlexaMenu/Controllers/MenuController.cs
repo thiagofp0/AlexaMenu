@@ -25,7 +25,7 @@ namespace AlexaMenu.Controllers
 
             if (input.Request.Type == "LaunchRequest")
             { 
-                output.Response.OutputSpeech = new PlainTextOutputSpeech("Vrau");
+                output.Response.OutputSpeech = new PlainTextOutputSpeech("Olá! Para saber o cardápio do dia no R.U. diga 'Cardápio'.");
             }else if (input.Request.Type == "IntentRequest")
             {
                 IntentRequest intentRequest = (IntentRequest) input.Request;

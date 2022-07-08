@@ -1,4 +1,5 @@
-namespace AlexaMenu.Models;
+using System.Collections.Generic;
+using AlexaMenu.Models;
 
 public class ApiContent
 {

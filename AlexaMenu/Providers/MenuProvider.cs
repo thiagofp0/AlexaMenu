@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using AlexaMenu.Domain;
 using AlexaMenu.Interfaces;
 using AlexaMenu.Models;
-using AlexaMenu.Utils;
 using Newtonsoft.Json;
 
 namespace AlexaMenu.Providers
@@ -55,6 +54,7 @@ namespace AlexaMenu.Providers
         public string GetCurrentMenuOutput()
         {
             Menu menu = GetCurrentMenu();
+
             string breakfest = menu.Meals.Where(x => x.Id == 3).First().Dishes[4].Name;
             string lunch = menu.Meals.Where(x => x.Id == 4).First().Dishes.Where(x => x.Category.Equals("PRATO PRINCIPAL")).First().Name;
             string dinner = menu.Meals.Where(x => x.Id == 5).First().Dishes.Where(x => x.Category.Equals("PRATO PRINCIPAL")).First().Name;

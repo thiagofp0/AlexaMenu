@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="389bbfa1-55d2-46c6-aadc-90d970f4ed5b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlexaMenu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlexaMenu/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlexaMenu/Controllers/MenuController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Controllers/MenuController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlexaMenu/Interfaces/IMenuProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Interfaces/IMenuProvider.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlexaMenu/Providers/MenuProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Providers/MenuProvider.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,6 +63,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -128,7 +127,8 @@
       <workItem from="1654492219574" duration="448000" />
       <workItem from="1657071217846" duration="10015000" />
       <workItem from="1657164980629" duration="9486000" />
-      <workItem from="1657228303832" duration="1326000" />
+      <workItem from="1657228303832" duration="2683000" />
+      <workItem from="1657249509904" duration="512000" />
     </task>
     <task id="LOCAL-00001" summary="Dividindo operações pelo tipo de Intent Request">
       <created>1652754159873</created>
@@ -165,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657174294869</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Mudanças em dev">
+      <created>1657229953968</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1657229953968</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +199,8 @@
     <MESSAGE value="Construindo Intent Request" />
     <MESSAGE value="Retornando cardápio do dia" />
     <MESSAGE value="Finalizando LR" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalizando LR" />
+    <MESSAGE value="Mudanças em dev" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mudanças em dev" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -209,19 +217,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/AlexaMenu/Providers/MenuProvider.cs</url>
-          <line>18</line>
-          <properties documentPath="D:\Thiago\Projetos\C#\AlexaMenu\AlexaMenu\Providers\MenuProvider.cs" initialLine="18" containingFunctionPresentation="method 'RequestMenu'">
-            <startOffsets>
-              <option value="488" />
-            </startOffsets>
-            <endOffsets>
-              <option value="489" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

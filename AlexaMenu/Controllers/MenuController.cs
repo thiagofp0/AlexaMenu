@@ -23,6 +23,7 @@ namespace AlexaMenu.Controllers
             SkillResponse output = new SkillResponse();
             output.Version = "1.0";
             output.Response = new ResponseBody();
+            
 
             if (input.Request.Type == "LaunchRequest")
             {

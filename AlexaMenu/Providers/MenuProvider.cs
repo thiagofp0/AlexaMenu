@@ -12,8 +12,17 @@ namespace AlexaMenu.Providers
 {
     public class MenuProvider : IMenuProvider
     {
+        private static Menu menu;
         private static ClientBuilder client = new ClientBuilder();
         
+        public MenuProvider()
+        {
+            if(menu == null || menu.Date != DateTime.Today)
+            {
+                Task<ApiContent> response = RequestMenu(DateTime.Now);
+                menu = MenuUtils.BuildMenu(response);
+            }
+        }
         public async Task<ApiContent> RequestMenu(DateTime date)
         {
             if (date >= DateTime.Today)
@@ -35,9 +44,6 @@ namespace AlexaMenu.Providers
 
         public Menu GetCurrentMenu()
         {
-            var response = RequestMenu(DateTime.Now);
-            Menu menu = MenuUtils.BuildMenu(response);
-            
             return menu;
         }
 
@@ -54,7 +60,7 @@ namespace AlexaMenu.Providers
         public string GetCurrentMenuOutput()
         {
             Menu menu = GetCurrentMenu();
-
+            
             string breakfest = menu.Meals.Where(x => x.Id == 3).First().Dishes[4].Name;
             string lunch = menu.Meals.Where(x => x.Id == 4).First().Dishes.Where(x => x.Category.Equals("PRATO PRINCIPAL")).First().Name;
             string dinner = menu.Meals.Where(x => x.Id == 5).First().Dishes.Where(x => x.Category.Equals("PRATO PRINCIPAL")).First().Name;

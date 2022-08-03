@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="389bbfa1-55d2-46c6-aadc-90d970f4ed5b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlexaMenu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlexaMenu/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlexaMenu/Controllers/MenuController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Controllers/MenuController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlexaMenu/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlexaMenu/Providers/MenuProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Providers/MenuProvider.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +131,8 @@
       <workItem from="1657249509904" duration="512000" />
       <workItem from="1657251290304" duration="113000" />
       <workItem from="1657591858906" duration="811000" />
-      <workItem from="1658344200677" duration="1775000" />
+      <workItem from="1658344200677" duration="3676000" />
+      <workItem from="1659532111306" duration="299000" />
     </task>
     <task id="LOCAL-00001" summary="Dividindo operações pelo tipo de Intent Request">
       <created>1652754159873</created>
@@ -212,13 +211,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/AlexaMenu/Controllers/MenuController.cs</url>
-          <line>35</line>
+          <line>27</line>
           <properties documentPath="D:\Thiago\Projetos\C#\AlexaMenu\AlexaMenu\Controllers\MenuController.cs" initialLine="26" containingFunctionPresentation="method 'GetMenu'">
             <startOffsets>
-              <option value="991" />
+              <option value="734" />
             </startOffsets>
             <endOffsets>
-              <option value="1033" />
+              <option value="776" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />

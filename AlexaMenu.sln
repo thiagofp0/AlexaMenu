@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlexaMenu", "AlexaMenu\AlexaMenu.csproj", "{D1A511BB-ABE5-49F6-AF40-6CAAE0E1D155}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlexaMenuTest", "AlexaMenuTest\AlexaMenuTest.csproj", "{B2534F28-2268-4E35-A70F-CCCE9BA712FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{D1A511BB-ABE5-49F6-AF40-6CAAE0E1D155}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1A511BB-ABE5-49F6-AF40-6CAAE0E1D155}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1A511BB-ABE5-49F6-AF40-6CAAE0E1D155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2534F28-2268-4E35-A70F-CCCE9BA712FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2534F28-2268-4E35-A70F-CCCE9BA712FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2534F28-2268-4E35-A70F-CCCE9BA712FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2534F28-2268-4E35-A70F-CCCE9BA712FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

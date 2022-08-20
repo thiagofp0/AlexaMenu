@@ -5,8 +5,8 @@ using Alexa.NET.Request;
 using Alexa.NET.Request.Type;
 using Alexa.NET.Response;
 using AlexaMenu.Interfaces;
-using AlexaMenu.Models;
 using AlexaMenu.Providers;
+using AlexaMenu.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AlexaMenu.Controllers
@@ -15,7 +15,8 @@ namespace AlexaMenu.Controllers
     [Route("[controller]")]
     public class MenuController : Controller
     {
-        private MenuProvider _menuProvider = new MenuProvider();
+        private static IMenuRepository _menuRepository;
+        private MenuProvider _menuProvider = new MenuProvider(_menuRepository);
         
         [HttpPost, Route("/menu")] 
         public SkillResponse GetMenu(SkillRequest input)
@@ -27,7 +28,7 @@ namespace AlexaMenu.Controllers
 
             if (input.Request.Type == "LaunchRequest")
             {
-                string menuOutput = _menuProvider.GetCurrentMenuOutput();
+                string menuOutput = _menuProvider.GetCurrentMenu();
                 output.Response.OutputSpeech = new PlainTextOutputSpeech(menuOutput);
                 output.Response.ShouldEndSession = true;
 
@@ -46,7 +47,7 @@ namespace AlexaMenu.Controllers
         {
             if (intentType == "GetCurrentMenu")
             {
-                return _menuProvider.GetCurrentMenuOutput();
+                return _menuProvider.GetCurrentMenu();
             }
             return null;
         }

@@ -1,8 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-
-namespace AlexaMenu.Models
+namespace AlexaMenu.Domain.Models
 {
     public class Menu
     {

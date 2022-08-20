@@ -1,6 +1,4 @@
-using System;
-
-namespace AlexaMenu.Models
+namespace AlexaMenu.Domain.Models
 {
 
     public class ApiDataObject

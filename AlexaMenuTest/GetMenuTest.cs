@@ -1,20 +1,22 @@
 using AlexaMenu.Domain.Models;
-using Moq;
 using AlexaMenu.Interfaces;
+using Moq;
+using AlexaMenu.Providers;
+using AlexaMenu.Repositories;
+using Castle.Components.DictionaryAdapter.Xml;
 
 namespace AlexaMenuTest;
 
 [TestClass]
 public class GetMenuTest
 {
-    private Mock<IMenuProvider> _menuProvider;
+    private static Mock<IMenuRepository> _menuRepository = new Mock<IMenuRepository>();
     private Menu _menu;
     
     [TestInitialize]
     public void Setup()
     {
-        _menuProvider = new Mock<IMenuProvider>();
-        _menu = new Menu
+        _menu = new Menu()
         {
             Date = new DateTime(2022, 01, 01),
             Meals = new List<Meal>
@@ -31,6 +33,7 @@ public class GetMenuTest
                         new Dish{Name = "Café com açúcar", Category = "Café", Note = ""},
                         new Dish{Name = "Café sem açucar", Category = "Café", Note = ""},
                         new Dish{Name = "Leite", Category = "Leite", Note = ""},
+                        new Dish{Name = "Melancia", Category = "Fruta", Note = ""},
                         new Dish{Name = "Pão com margarina", Category = "Pão", Note = ""},  
                     }
                 },
@@ -78,6 +81,7 @@ public class GetMenuTest
                 }
             }
         };
+        _menuRepository.Setup(x => x.GetMenu(It.IsAny<DateTime>())).Returns(_menu);
     }
     
     [TestMethod]
@@ -86,10 +90,12 @@ public class GetMenuTest
         var assert = 
             "Hoje no café teremos Pão com margarina. No Almoço o prato principal é Bife Suíno. " +
             "No jantar, o prato é Carne Moída com Cenoura e Ervilha";
+
         
-        _menuProvider.Setup(x => x.GetCurrentMenu()).Returns(_menu);
+        MenuProvider menuProvider = new MenuProvider(_menuRepository.Object);
         
-        //Criar a requisição
-        //Colocar o assert
+        var result = menuProvider.GetCurrentMenu();
+        Assert.AreEqual(assert, result);
+
     }
 }

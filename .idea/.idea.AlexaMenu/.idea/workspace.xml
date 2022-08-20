@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="389bbfa1-55d2-46c6-aadc-90d970f4ed5b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/AlexaMenu/Interfaces/IMenuRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlexaMenu/Repositories/MenuRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlexaMenu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlexaMenu/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexaMenu.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexaMenu.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexaMenu/AlexaMenu.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/AlexaMenu.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexaMenu/Controllers/MenuController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Controllers/MenuController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexaMenu/Interfaces/IMenuProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Interfaces/IMenuProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexaMenu/Models/ApiContent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Domain/Models/ApiContent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexaMenu/Models/ApiDataObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Domain/Models/ApiDataObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexaMenu/Models/Dish.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Domain/Models/Dish.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexaMenu/Models/Meal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Domain/Models/Meal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexaMenu/Models/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Domain/Models/Menu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexaMenu/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlexaMenu/Providers/MenuProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Providers/MenuProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexaMenu/Utils/MenuUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenu/Utils/MenuUtils.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexaMenuTest/GetMenuTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaMenuTest/GetMenuTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,11 +40,18 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/198a6261cebc324728dcc4c178edc5f2894123f711722c80e8557cbfd27651/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1af51483c9bf18871cce649b9f966dd7be686536f998c33bba3c5fc4adea4a0/Task.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/27b91272f348469b8fccc471c1ccd767f57a64f55a44975790bfae805b4ebb/Future.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7d9a41d47547e1fe7fe548b21ab4de12cc2671170a023bc8c629017837eb5f4/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8b17eea7411eb1ee7e80413e8229dc445ba073ab591c18196db8b55712aabb/ControllerFactoryProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/933f374d88a082deeb91a8715cb947ccef921a3d1aa957af5ca5624f813a2b8/DateTime.Windows.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a9cbda3784706aeeed61f1a08a18046925b69f777943eca27fbbcca09dff60/DateTime.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b34cda9bf13421d0d691446062e86e73ba22b7a724d9d34a2425bb1cc627e1/SR.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b8d2795a624ec1ca285de7c049f728624e8b8a82388f8d67db20c33442b28f53/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c9ca552eea9bb8fababbf1cd3f981cf68849ccc365dcca5627376f98e505c74/ControllerActionInvoker.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d9d9faea5e6ed6438a777ef8c6eed41261f81d8e86488ed923ad92564f54e/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AlexaMenuTest/GetMenuTest.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -133,6 +155,8 @@
       <workItem from="1657591858906" duration="811000" />
       <workItem from="1658344200677" duration="3676000" />
       <workItem from="1659532111306" duration="299000" />
+      <workItem from="1660696905924" duration="2577000" />
+      <workItem from="1660956255118" duration="6286000" />
     </task>
     <task id="LOCAL-00001" summary="Dividindo operações pelo tipo de Intent Request">
       <created>1652754159873</created>
@@ -176,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657229953968</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adicionando teste de recuperação do menu atual">
+      <created>1660696396447</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1660696396451</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,23 +235,50 @@
     <MESSAGE value="Retornando cardápio do dia" />
     <MESSAGE value="Finalizando LR" />
     <MESSAGE value="Mudanças em dev" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mudanças em dev" />
+    <MESSAGE value="Adicionando teste de recuperação do menu atual" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionando teste de recuperação do menu atual" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/AlexaMenu/Controllers/MenuController.cs</url>
-          <line>27</line>
-          <properties documentPath="D:\Thiago\Projetos\C#\AlexaMenu\AlexaMenu\Controllers\MenuController.cs" initialLine="26" containingFunctionPresentation="method 'GetMenu'">
+          <line>29</line>
+          <properties documentPath="D:\Thiago\Projetos\C#\AlexaMenu\AlexaMenu\Controllers\MenuController.cs" initialLine="29" containingFunctionPresentation="method 'GetMenu'">
             <startOffsets>
-              <option value="734" />
+              <option value="866" />
             </startOffsets>
             <endOffsets>
-              <option value="776" />
+              <option value="867" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/AlexaMenu/Providers/MenuProvider.cs</url>
+          <line>25</line>
+          <properties documentPath="D:\Thiago\Projetos\C#\AlexaMenu\AlexaMenu\Providers\MenuProvider.cs" initialLine="19" containingFunctionPresentation="method 'GetCurrentMenu'">
+            <startOffsets>
+              <option value="789" />
+            </startOffsets>
+            <endOffsets>
+              <option value="790" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/AlexaMenu/Providers/MenuProvider.cs</url>
+          <line>13</line>
+          <properties documentPath="D:\Thiago\Projetos\C#\AlexaMenu\AlexaMenu\Providers\MenuProvider.cs" initialLine="12" containingFunctionPresentation="constructor 'MenuProvider'">
+            <startOffsets>
+              <option value="412" />
+            </startOffsets>
+            <endOffsets>
+              <option value="413" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

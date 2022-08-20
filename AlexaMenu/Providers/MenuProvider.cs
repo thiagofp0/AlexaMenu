@@ -1,70 +1,32 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Threading.Tasks;
 using AlexaMenu.Domain;
+using AlexaMenu.Domain.Models;
 using AlexaMenu.Interfaces;
-using AlexaMenu.Models;
 using Newtonsoft.Json;
-
+using AlexaMenu.Repositories;
 namespace AlexaMenu.Providers
 {
     public class MenuProvider : IMenuProvider
     {
         private static Menu menu;
-        private static ClientBuilder client = new ClientBuilder();
-        
-        public MenuProvider()
+        private readonly IMenuRepository _menuRepository;
+        public MenuProvider(IMenuRepository? menuRepository)
         {
+            if (menuRepository == null)
+            {
+                menuRepository = new MenuRepository();
+            }
+            _menuRepository = menuRepository;
             if(menu == null || menu.Date != DateTime.Today)
             {
-                Task<ApiContent> response = RequestMenu(DateTime.Now);
-                menu = MenuUtils.BuildMenu(response);
+                menu = _menuRepository.GetMenu(DateTime.Now);
             }
         }
-        public async Task<ApiContent> RequestMenu(DateTime date)
+       public string GetCurrentMenu()
         {
-            if (date >= DateTime.Today)
-            {
-                HttpContent httpContent = new FormUrlEncodedContent(new List<KeyValuePair<string, string>>
-                {
-                    new KeyValuePair<string, string>("data_selecionada", date.ToString("dd/MM/yyyy"))
-                });
-                httpContent.Headers.ContentType = new MediaTypeHeaderValue("application/x-www-form-urlencoded");
-                
-                var response = await client.PostAsync(client.BaseAddress, httpContent);
-                var content = await response.Content.ReadAsStringAsync();
-                var json = JsonConvert.DeserializeObject<ApiContent>(content);
-                
-                return json;
-            }
-            return null;
-        }
-
-        public Menu GetCurrentMenu()
-        {
-            return menu;
-        }
-
-        public Menu GetNextMenu()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Menu GetLastMenu()
-        {
-            throw new NotImplementedException();
-        }
-
-        public string GetCurrentMenuOutput()
-        {
-            Menu menu = GetCurrentMenu();
-            
             string breakfest = menu.Meals.Where(x => x.Id == 3).First().Dishes[4].Name;
-            string lunch = menu.Meals.Where(x => x.Id == 4).First().Dishes.Where(x => x.Category.Equals("PRATO PRINCIPAL")).First().Name;
-            string dinner = menu.Meals.Where(x => x.Id == 5).First().Dishes.Where(x => x.Category.Equals("PRATO PRINCIPAL")).First().Name;
+            string lunch = menu.Meals.Where(x => x.Id == 4).First().Dishes.Where(x => x.Category.Equals("PRATO PRINCIPAL")).First().Name.TrimEnd();
+            string dinner = menu.Meals.Where(x => x.Id == 5).First().Dishes.Where(x => x.Category.Equals("PRATO PRINCIPAL")).First().Name.TrimEnd();
             
             if (menu.Meals.Count > 3)
             {

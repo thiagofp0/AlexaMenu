@@ -27,6 +27,14 @@ namespace AlexaMenu.Domain.Base.Api.Middlewares
             {
                 await SetErrorResponse(ResponseErrorBody.BadRequest(ex.Message, ex.Notifications), ex, context);
             }
+            catch (NoResultsException ex)
+            {
+                await SetErrorResponse(ResponseErrorBody.NotFound(ex.Message, ex.Notifications), ex, context);
+            }
+            catch (InfrastructureFailedException ex)
+            {
+                await SetErrorResponse(ResponseErrorBody.ServerError(ex.Message, ex.Notifications), ex, context);
+            }
             catch (Exception ex)
             {
                 await SetErrorResponse(ResponseErrorBody.ServerError(ex.Message), ex, context);

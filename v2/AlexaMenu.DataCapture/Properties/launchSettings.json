@@ -2,7 +2,7 @@
   "profiles": {
     "AlexaMenu.DataCapture": {
       "commandName": "Project",
-      "commandLineArgs": "--port 7224",
+      "commandLineArgs": "--port 7183",
       "launchBrowser": false
     }
   }

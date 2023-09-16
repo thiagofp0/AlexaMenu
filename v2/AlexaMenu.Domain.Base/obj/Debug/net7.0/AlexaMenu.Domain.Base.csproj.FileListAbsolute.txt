@@ -10,3 +10,15 @@ D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu\AlexaMenu.Domain.Base\obj\Deb
 D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu\AlexaMenu.Domain.Base\obj\Debug\net7.0\refint\AlexaMenu.Domain.Base.dll
 D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu\AlexaMenu.Domain.Base\obj\Debug\net7.0\AlexaMenu.Domain.Base.pdb
 D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu\AlexaMenu.Domain.Base\obj\Debug\net7.0\ref\AlexaMenu.Domain.Base.dll
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain.Base\bin\Debug\net7.0\AlexaMenu.Domain.Base.deps.json
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain.Base\bin\Debug\net7.0\AlexaMenu.Domain.Base.dll
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain.Base\bin\Debug\net7.0\AlexaMenu.Domain.Base.pdb
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain.Base\obj\Debug\net7.0\AlexaMenu.Domain.Base.csproj.AssemblyReference.cache
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain.Base\obj\Debug\net7.0\AlexaMenu.Domain.Base.GeneratedMSBuildEditorConfig.editorconfig
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain.Base\obj\Debug\net7.0\AlexaMenu.Domain.Base.AssemblyInfoInputs.cache
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain.Base\obj\Debug\net7.0\AlexaMenu.Domain.Base.AssemblyInfo.cs
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain.Base\obj\Debug\net7.0\AlexaMenu.Domain.Base.csproj.CoreCompileInputs.cache
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain.Base\obj\Debug\net7.0\AlexaMenu.Domain.Base.dll
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain.Base\obj\Debug\net7.0\refint\AlexaMenu.Domain.Base.dll
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain.Base\obj\Debug\net7.0\AlexaMenu.Domain.Base.pdb
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain.Base\obj\Debug\net7.0\ref\AlexaMenu.Domain.Base.dll

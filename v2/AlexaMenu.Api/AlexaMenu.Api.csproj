@@ -4,6 +4,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>c1395a4f-0898-4b71-8ff3-3629f5a4c599</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AlexaMenu.Domain.Base\AlexaMenu.Domain.Base.csproj" />
+	  <ProjectReference Include="..\AlexaMenu.Infrastructure\AlexaMenu.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

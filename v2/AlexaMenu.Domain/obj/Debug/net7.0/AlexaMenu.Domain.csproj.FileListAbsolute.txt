@@ -1,0 +1,15 @@
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain\bin\Debug\net7.0\AlexaMenu.Domain.deps.json
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain\bin\Debug\net7.0\AlexaMenu.Domain.dll
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain\bin\Debug\net7.0\AlexaMenu.Domain.pdb
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain\bin\Debug\net7.0\AlexaMenu.Domain.Base.dll
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain\bin\Debug\net7.0\AlexaMenu.Domain.Base.pdb
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain\obj\Debug\net7.0\AlexaMenu.Domain.csproj.AssemblyReference.cache
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain\obj\Debug\net7.0\AlexaMenu.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain\obj\Debug\net7.0\AlexaMenu.Domain.AssemblyInfoInputs.cache
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain\obj\Debug\net7.0\AlexaMenu.Domain.AssemblyInfo.cs
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain\obj\Debug\net7.0\AlexaMenu.Domain.csproj.CoreCompileInputs.cache
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain\obj\Debug\net7.0\AlexaMenu.Domain.csproj.CopyComplete
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain\obj\Debug\net7.0\AlexaMenu.Domain.dll
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain\obj\Debug\net7.0\refint\AlexaMenu.Domain.dll
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain\obj\Debug\net7.0\AlexaMenu.Domain.pdb
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Domain\obj\Debug\net7.0\ref\AlexaMenu.Domain.dll

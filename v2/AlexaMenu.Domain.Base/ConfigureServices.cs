@@ -10,14 +10,12 @@ namespace AlexaMenu.DependencyInjection
     {
         public static IApplicationBuilder AddAlexaMenuApiBaseSettings(this IApplicationBuilder app, IConfiguration config)
         {
-            if (config.GetValue<bool>("EnableSwagger"))
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
+            app.UseSwagger();
+            app.UseSwaggerUI();
 
             app.UseMiddleware<ExceptionHandler>();
             app.UseHttpLogging();
+            app.UseStaticFiles();
 
             return app;
         }

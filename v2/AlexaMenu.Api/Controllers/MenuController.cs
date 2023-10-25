@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AlexaMenu.Api.Models;
+using AlexaMenu.Domain.Interfaces;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AlexaMenu.Api.Controllers
@@ -7,11 +9,13 @@ namespace AlexaMenu.Api.Controllers
     [ApiController]
     public class MenuController : ControllerBase
     {
-        private IConfiguration _configuration;
+        private IMenuRepository _menuRepository;
+        private IMapper _mapper;
 
-        public MenuController(IConfiguration configuration)
+        public MenuController(IMenuRepository menuRepository, IMapper mapper)
         {
-            _configuration = configuration;
+            _menuRepository = menuRepository;
+            _mapper = mapper;
         }
 
         [HttpGet(Name = "GetMenu")]
@@ -19,10 +23,20 @@ namespace AlexaMenu.Api.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public ActionResult<string> Get()
+        public async Task<ObjectResult> Get([FromQuery(Name = "date")] DateTime date)
         {
-            var teste = _configuration.GetValue<string>("MongoDB:ConnectionString");
-            return Ok(teste);
+            var menu = _mapper.Map<MenuApiModel>(await _menuRepository.Get(date));
+            return new OkObjectResult(menu);
+        }
+
+        [HttpPost(Name = "SetMenu")]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<ObjectResult> Set()
+        {
+            _menuRepository.Set();
+            return Ok("");
         }
     }
 }

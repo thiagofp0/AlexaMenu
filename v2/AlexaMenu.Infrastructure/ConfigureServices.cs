@@ -11,6 +11,7 @@ namespace AlexaMenu.DependencyInjection
     {
         public static IServiceCollection AddMongoDBServices(this IServiceCollection services)
         {
+            services.AddAutoMapper(typeof(Infrastructure.Mapping.MapProfile));
             services.AddScoped<DatabaseConnection>();
             services.AddScoped<IMenuRepository, MenuRepository>();
             services.AddScoped<IDatabaseAdapter<MongoClient>, DatabaseConnection>();

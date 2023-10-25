@@ -8,6 +8,7 @@ namespace AlexaMenu.Infrastructure.Database
     public class DatabaseConnection : IDatabaseAdapter<MongoClient>
     {
         private readonly IConfiguration _configuration;
+
         public DatabaseConnection(IConfiguration configuration)
         {
             _configuration = configuration;

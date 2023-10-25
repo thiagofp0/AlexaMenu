@@ -87,3 +87,5 @@ D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Api\obj\Debug\net7.0\refint\A
 D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Api\obj\Debug\net7.0\AlexaMenu.Api.pdb
 D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Api\obj\Debug\net7.0\AlexaMenu.Api.genruntimeconfig.cache
 D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Api\obj\Debug\net7.0\ref\AlexaMenu.Api.dll
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Api\bin\Debug\net7.0\AutoMapper.dll
+D:\Thiago\Projetos\C#\Alexa\AlexaMenu\v2\AlexaMenu.Api\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

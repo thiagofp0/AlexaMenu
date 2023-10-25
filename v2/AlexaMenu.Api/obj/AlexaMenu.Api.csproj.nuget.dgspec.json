@@ -31,6 +31,9 @@
               "D:\\Thiago\\Projetos\\C#\\Alexa\\AlexaMenu\\v2\\AlexaMenu.Domain.Base\\AlexaMenu.Domain.Base.csproj": {
                 "projectPath": "D:\\Thiago\\Projetos\\C#\\Alexa\\AlexaMenu\\v2\\AlexaMenu.Domain.Base\\AlexaMenu.Domain.Base.csproj"
               },
+              "D:\\Thiago\\Projetos\\C#\\Alexa\\AlexaMenu\\v2\\AlexaMenu.Domain\\AlexaMenu.Domain.csproj": {
+                "projectPath": "D:\\Thiago\\Projetos\\C#\\Alexa\\AlexaMenu\\v2\\AlexaMenu.Domain\\AlexaMenu.Domain.csproj"
+              },
               "D:\\Thiago\\Projetos\\C#\\Alexa\\AlexaMenu\\v2\\AlexaMenu.Infrastructure\\AlexaMenu.Infrastructure.csproj": {
                 "projectPath": "D:\\Thiago\\Projetos\\C#\\Alexa\\AlexaMenu\\v2\\AlexaMenu.Infrastructure\\AlexaMenu.Infrastructure.csproj"
               }
@@ -250,6 +253,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[7.0.0, )"

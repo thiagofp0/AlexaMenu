@@ -9,7 +9,9 @@ namespace AlexaMenu.Infrastructure.Mapping
 		public MapProfile()
 		{
 			CreateMap<MenuDocumentModel, Menu>()
-				.ForMember(destination => destination.Id, cfg => cfg.Ignore());
+                .ForMember(destination => destination.Date, cfg => cfg.MapFrom(source => source.Date))
+                .ForMember(destination => destination.Meals, cfg => cfg.MapFrom(source => source.Meals))
+                .ForMember(destination => destination.Id, cfg => cfg.Ignore());
         }
 	}
 }

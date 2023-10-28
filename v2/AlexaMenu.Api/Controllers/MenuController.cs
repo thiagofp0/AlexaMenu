@@ -23,7 +23,7 @@ namespace AlexaMenu.Api.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<ObjectResult> Get([FromQuery(Name = "date")] DateTime date)
+        public async Task<ObjectResult> Get(DateTime date)
         {
             var menu = _mapper.Map<MenuApiModel>(await _menuRepository.Get(date));
             return new OkObjectResult(menu);

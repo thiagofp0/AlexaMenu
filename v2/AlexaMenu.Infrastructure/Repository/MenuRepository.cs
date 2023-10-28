@@ -1,4 +1,5 @@
 ﻿using AlexaMenu.Domain.Base.Adapters;
+using AlexaMenu.Domain.Base.Exceptions;
 using AlexaMenu.Domain.Entities;
 using AlexaMenu.Domain.Interfaces;
 using AlexaMenu.Infrastructure.Data.Models;
@@ -7,6 +8,7 @@ using AutoMapper;
 using Microsoft.Extensions.Configuration;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using MongoDB.Driver.Linq;
 
 namespace AlexaMenu.Infrastructure.Repository
 {
@@ -28,16 +30,17 @@ namespace AlexaMenu.Infrastructure.Repository
         {
             var teste = new MenuDocumentModel();
             teste.Id = ObjectId.GenerateNewId();
-            teste.Date = DateTime.Now;
+            teste.Date = DateTime.Now.ToShortDateString();
             teste.Meals = new List<Meal>();
 
             _collection.InsertOne(teste);
         }
-
-        public async Task<Menu> Get(DateTime date)
+        
+        public async Task<Menu> Get(DateTime? date)
         {
-            var filter = Builders<MenuDocumentModel>.Filter.Eq(x => x.Date.Date, date.Date);
-            return _mapper.Map<Menu>(await _collection.Find(filter).FirstOrDefaultAsync());
+            var filter = Builders<MenuDocumentModel>.Filter.Eq(x => x.Date, date!.Value.ToShortDateString());
+            var result = await _collection.FindAsync(filter).Result.FirstOrDefaultAsync();
+            return result == null ? throw new NoResultsException("Menu not found.") : _mapper.Map<Menu>(result);
         }
     }
 }

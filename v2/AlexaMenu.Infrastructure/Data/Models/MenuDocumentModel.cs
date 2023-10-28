@@ -13,7 +13,7 @@ namespace AlexaMenu.Infrastructure.Data.Models
 
         [BsonElement("date")]
         [BsonRequired]
-        public DateTime Date { get; set; }
+        public string? Date { get; set; }
 
         [BsonElement("meals")]
         [BsonRequired]

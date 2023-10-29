@@ -12,8 +12,10 @@ namespace AlexaMenu.Domain.Entities
             if (date == default)
                 AddNotification("Date is required.");
             if (meals == null || !meals.Any())
+            {
                 AddNotification("Meals are required.");
                 meals = new();
+            }
 
             Date = date;
             Meals = meals;

@@ -1,5 +1,6 @@
 ﻿using AlexaMenu.Domain.Base.Adapters;
 using AlexaMenu.Domain.Base.Exceptions;
+using AlexaMenu.Domain.CommandObject;
 using AlexaMenu.Domain.Entities;
 using AlexaMenu.Domain.Interfaces;
 using AlexaMenu.Infrastructure.Data.Models;
@@ -26,20 +27,16 @@ namespace AlexaMenu.Infrastructure.Repository
             _client = _databaseAdapter.GetConnection();
             _collection = _client.GetDatabase("Menu").GetCollection<MenuDocumentModel>("Menu");
         }
-        public void Set()
+        public void Set(MenuSaveCommandObject menu)
         {
-            var teste = new MenuDocumentModel();
-            teste.Id = ObjectId.GenerateNewId();
-            teste.Date = DateTime.Now.ToShortDateString();
-            teste.Meals = new List<Meal>();
-
-            _collection.InsertOne(teste);
+            _collection.InsertOne(_mapper.Map<MenuDocumentModel>(menu));
         }
         
-        public async Task<Menu> Get(DateTime? date)
+        public async Task<Menu> Get(DateTime date)
         {
-            var filter = Builders<MenuDocumentModel>.Filter.Eq(x => x.Date, date!.Value.ToShortDateString());
+            var filter = Builders<MenuDocumentModel>.Filter.Eq(x => x.Date, date!.Date.ToShortDateString());
             var result = await _collection.FindAsync(filter).Result.FirstOrDefaultAsync();
+            var teste = _mapper.Map<Menu>(result);
             return result == null ? throw new NoResultsException("Menu not found.") : _mapper.Map<Menu>(result);
         }
     }

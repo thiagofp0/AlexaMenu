@@ -1,10 +1,8 @@
-﻿using AlexaMenu.Domain.Entities;
-
-namespace AlexaMenu.Api.Models
+﻿namespace AlexaMenu.Api.Models
 {
     public class MenuApiModel
     {
         public DateTime Date { get; set; }
-        public List<Meal> Meals { get; set; } = new();
+        public List<MealApiModel> Meals { get; set; } = new();
     }
 }

@@ -1,6 +1,4 @@
-﻿using System;
-using AlexaMenu.Domain.Entities;
-using MongoDB.Bson;
+﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
 namespace AlexaMenu.Infrastructure.Data.Models
@@ -13,10 +11,10 @@ namespace AlexaMenu.Infrastructure.Data.Models
 
         [BsonElement("date")]
         [BsonRequired]
-        public string? Date { get; set; }
+        public string Date { get; set; } = string.Empty;
 
         [BsonElement("meals")]
         [BsonRequired]
-        public List<Meal> Meals { get; set; } = new();
+        public List<MealDocumentModel> Meals { get; set; } = new();
     }
 }

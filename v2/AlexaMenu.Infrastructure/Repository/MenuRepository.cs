@@ -7,7 +7,6 @@ using AlexaMenu.Infrastructure.Data.Models;
 using AlexaMenu.Infrastructure.Database;
 using AutoMapper;
 using Microsoft.Extensions.Configuration;
-using MongoDB.Bson;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
 

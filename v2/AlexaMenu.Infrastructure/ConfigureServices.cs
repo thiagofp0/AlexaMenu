@@ -2,6 +2,7 @@
 using AlexaMenu.Domain.Base.Adapters;
 using AlexaMenu.Domain.Interfaces;
 using AlexaMenu.Infrastructure.Database;
+using AlexaMenu.Infrastructure.Service;
 using AlexaMenu.Infrastructure.Repository;
 using MongoDB.Driver;
 
@@ -14,6 +15,7 @@ namespace AlexaMenu.DependencyInjection
             services.AddAutoMapper(typeof(Infrastructure.Mapping.MapProfile));
             services.AddScoped<DatabaseConnection>();
             services.AddScoped<IMenuRepository, MenuRepository>();
+            services.AddScoped<IUniversityService, UniversityService>();
             services.AddScoped<IDatabaseAdapter<MongoClient>, DatabaseConnection>();
 
             return services;

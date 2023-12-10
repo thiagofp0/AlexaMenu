@@ -13,6 +13,10 @@
     <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="1.14.0" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AlexaMenu.Domain\AlexaMenu.Domain.csproj" />
+    <ProjectReference Include="..\AlexaMenu.Infrastructure\AlexaMenu.Infrastructure.csproj" />
+  </ItemGroup>
+  <ItemGroup>
     <None Update="host.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

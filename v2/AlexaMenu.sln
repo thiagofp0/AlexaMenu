@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlexaMenu.Domain", "AlexaMe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlexaMenu.Domain.Base", "AlexaMenu.Domain.Base\AlexaMenu.Domain.Base.csproj", "{839C7D4D-BC5D-46A4-8160-F6C15C5D6B3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlexaMenu.DataCapture", "AlexaMenu.DataCapture\AlexaMenu.DataCapture.csproj", "{30B60093-84C4-46C3-87D5-ADF2F7CD3C6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlexaMenu.DataCapture", "AlexaMenu.DataCapture\AlexaMenu.DataCapture.csproj", "{30B60093-84C4-46C3-87D5-ADF2F7CD3C6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlexaMenu.Infrastructure", "AlexaMenu.Infrastructure\AlexaMenu.Infrastructure.csproj", "{7D627671-7B88-407B-9E29-847B4C17B677}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlexaMenu.Infrastructure", "AlexaMenu.Infrastructure\AlexaMenu.Infrastructure.csproj", "{7D627671-7B88-407B-9E29-847B4C17B677}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AD22A919-9DFD-4323-B054-370CB32AFA0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +44,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E2044FD6-B6BC-49A3-94E4-E4C8308E1E29} = {AD22A919-9DFD-4323-B054-370CB32AFA0A}
+		{680784FF-70D9-4911-A033-1B628E7F83B4} = {AD22A919-9DFD-4323-B054-370CB32AFA0A}
+		{839C7D4D-BC5D-46A4-8160-F6C15C5D6B3E} = {AD22A919-9DFD-4323-B054-370CB32AFA0A}
+		{30B60093-84C4-46C3-87D5-ADF2F7CD3C6B} = {AD22A919-9DFD-4323-B054-370CB32AFA0A}
+		{7D627671-7B88-407B-9E29-847B4C17B677} = {AD22A919-9DFD-4323-B054-370CB32AFA0A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8D36FBD1-3674-42D0-A2E6-93F5450D26CC}

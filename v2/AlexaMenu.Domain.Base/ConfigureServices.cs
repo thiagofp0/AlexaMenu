@@ -28,7 +28,7 @@ namespace AlexaMenu.DependencyInjection
         }
         public static IServiceCollection AddAlexaMenuApiBaseServices(this IServiceCollection services)
         {
-
+            services.AddHttpLogging(o => { });
             services.AddControllers();
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();

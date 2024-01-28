@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AD22A919-9DF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F94A722A-65D7-4FB2-927B-365917E45971}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlexaMenu.Domain.Base.UnitTests", "AlexaMenu.Domain.Base.UnitTests\AlexaMenu.Domain.Base.UnitTests.csproj", "{97F70663-1056-4B37-B64A-F83B6AB2D949}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlexaMenu.Domain.UnitTests", "AlexaMenu.Domain.Base.UnitTests\AlexaMenu.Domain.UnitTests.csproj", "{97F70663-1056-4B37-B64A-F83B6AB2D949}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

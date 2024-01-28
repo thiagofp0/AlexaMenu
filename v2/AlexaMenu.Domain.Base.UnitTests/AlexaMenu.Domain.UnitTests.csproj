@@ -22,4 +22,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AlexaMenu.Domain\AlexaMenu.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

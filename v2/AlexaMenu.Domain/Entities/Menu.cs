@@ -17,6 +17,8 @@ namespace AlexaMenu.Domain.Entities
                 meals = new();
             }
 
+            Validate();
+            
             Date = date;
             Meals = meals;
         }

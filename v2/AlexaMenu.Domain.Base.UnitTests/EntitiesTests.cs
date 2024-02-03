@@ -71,5 +71,11 @@ namespace AlexaMenu.Domain.Base.UnitTests
 
             Assert.True(menu.Validated);
         }
+
+        [Fact]
+        public void NewMenu_Invalid()
+        {
+            Assert.Throws<InvalidDomainStateException>(() => new Menu(DateTime.Now, new List<Meal>()));
+        }
     }
 }

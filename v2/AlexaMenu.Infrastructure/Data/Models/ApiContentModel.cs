@@ -3,8 +3,8 @@ namespace AlexaMenu.Infrastructure.Data.Models
 {
     public class ApiContentModel
     {
-        public bool retorno { get; private set; }
-        public List<ApiDataObject> dados { get; private set; } = new();
+        public bool Retorno { get; set; }
+        public List<ApiDataObject> Dados { get; set; } = new();
         
     }
 }

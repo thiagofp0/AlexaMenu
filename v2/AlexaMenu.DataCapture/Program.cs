@@ -9,8 +9,8 @@ var host = new HostBuilder()
     .ConfigureFunctionsWorkerDefaults()
     .ConfigureServices(services =>
     {
-        services.AddScoped<IUniversityService, UniversityService>();
-        services.AddScoped<IMenuRepository, MenuRepository>();
+        services.AddTransient<IUniversityService, UniversityService>();
+        services.AddTransient<IMenuRepository, MenuRepository>();
         services.AddAutoMapper(typeof(MapProfile));
     })
     .Build();

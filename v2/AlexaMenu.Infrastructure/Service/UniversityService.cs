@@ -1,9 +1,11 @@
-﻿using System.Net.Http.Headers;
+﻿using System;
+using System.Net.Http.Headers;
 using AlexaMenu.Domain.Entities;
 using AlexaMenu.Domain.Interfaces;
 using AlexaMenu.Infrastructure.Configuration;
-using System.Text.Json;
 using AlexaMenu.Infrastructure.Data.Models;
+using AlexaMenu.Infrastructure.Mapping;
+using Newtonsoft.Json;
 
 namespace AlexaMenu.Infrastructure.Service
 {
@@ -21,12 +23,10 @@ namespace AlexaMenu.Infrastructure.Service
 
             var response = await client.PostAsync(client.BaseAddress, httpContent);
             var content = await response.Content.ReadAsStringAsync();
-            var json = JsonSerializer.Deserialize<ApiContentModel>(content);
+            var json = JsonConvert.DeserializeObject<ApiContentModel>(content);
+            var menu = MappingUtils.BuildMenu(json);
 
-            // Reorganizar essa função
-            // Fazer o mapping e retornar o menu
-
-            return new Menu(DateTime.Now, new List<Meal>());
+            return menu;
         }
     }
 }

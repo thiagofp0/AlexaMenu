@@ -25,7 +25,7 @@ namespace AlexaMenu.Infrastructure.Mapping
                 .ForMember(destination => destination.Meals, cfg => cfg.MapFrom(source => MapMealApiModelMealsToDocumentModel(source.Meals)))
                 .ForMember(destination => destination.Id, cfg => cfg.Ignore());
         }
-        
+
         static List<MealDocumentModel> MapMealApiModelMealsToDocumentModel(List<Meal> meals)
         {
             return meals.Select(item =>

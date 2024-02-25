@@ -1,4 +1,3 @@
-using AlexaMenu.Domain.CommandObject;
 using AlexaMenu.Domain.Interfaces;
 using Microsoft.Azure.Functions.Worker;
 
@@ -25,9 +24,9 @@ namespace AlexaMenu.DataCapture
             //Criar adapter do mongoDB
             //Salvar no mongoDB
             //Requisição na api para atualizar singleton
-            var menu = await _universityService.GetMenu(DateTime.Now);
-            var menuSaveCommandObject = new MenuSaveCommandObject(menu.Meals, menu.Date);
-            _menuRepository.Set(menuSaveCommandObject);
+            // var menu = await _universityService.GetMenu(DateTime.Now);
+            // var menuSaveCommandObject = new MenuSaveCommandObject(menu.Meals, menu.Date);
+            // _menuRepository.Set(menuSaveCommandObject);
         }
     }
 }

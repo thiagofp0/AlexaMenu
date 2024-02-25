@@ -11,11 +11,13 @@ namespace AlexaMenu.Api.Controllers
     public class MenuController : ControllerBase
     {
         private IMenuRepository _menuRepository;
+        private IUniversityService _universityService;
         private IMapper _mapper;
 
-        public MenuController(IMenuRepository menuRepository, IMapper mapper)
+        public MenuController(IMenuRepository menuRepository, IUniversityService universityService, IMapper mapper)
         {
             _menuRepository = menuRepository;
+            _universityService = universityService;
             _mapper = mapper;
         }
 
@@ -26,8 +28,8 @@ namespace AlexaMenu.Api.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ObjectResult> Get(DateTime date)
         {
-            var teste = _mapper.Map<MenuApiModel>(await _menuRepository.Get(date));
-            return new OkObjectResult(teste);
+            var menu = _mapper.Map<MenuApiModel>(await _menuRepository.Get(date));
+            return new OkObjectResult(menu);
         }
 
         [HttpPost(Name = "SetMenu")]

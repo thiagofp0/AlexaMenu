@@ -10,7 +10,8 @@ builder.Services.AddAutoMapper(typeof(MapProfile));
 
 var app = builder.Build();
 
-app.AddAlexaMenuApiBaseSettings(builder.Configuration);
+app.AddAlexaMenuSwaggerSettings();
+app.AddAlexaMenuHttpSettings();
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();

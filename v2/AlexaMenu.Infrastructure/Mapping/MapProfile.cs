@@ -7,8 +7,8 @@ namespace AlexaMenu.Infrastructure.Mapping
 {
 	public class MapProfile : Profile
 	{
-		public MapProfile()
-		{
+        public MapProfile()
+        {
             CreateMap<MenuDocumentModel, Menu>().ForMember(destination => destination.Id, cfg => cfg.Ignore())
                 .ForMember(destination => destination.Date, cfg => cfg.MapFrom(source => DateTime.Parse(source.Date)))
                 .ForMember(destination => destination.Meals, cfg => cfg.MapFrom(source => MapMealDocumentModelToMeal(source.Meals)));
@@ -25,7 +25,6 @@ namespace AlexaMenu.Infrastructure.Mapping
                 .ForMember(destination => destination.Meals, cfg => cfg.MapFrom(source => MapMealApiModelMealsToDocumentModel(source.Meals)))
                 .ForMember(destination => destination.Id, cfg => cfg.Ignore());
         }
-
         static List<MealDocumentModel> MapMealApiModelMealsToDocumentModel(List<Meal> meals)
         {
             return meals.Select(item =>

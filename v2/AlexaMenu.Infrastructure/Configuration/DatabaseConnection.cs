@@ -1,5 +1,4 @@
 ﻿using AlexaMenu.Domain.Base.Adapters;
-using AlexaMenu.Domain.Base.Exceptions;
 using Microsoft.Extensions.Configuration;
 using MongoDB.Driver;
 
@@ -16,8 +15,7 @@ namespace AlexaMenu.Infrastructure.Database
         
         public MongoClient GetConnection()
         {
-            var connectionString = _configuration.GetConnectionString("mongoDB")
-                ?? throw new InfrastructureFailedException("Connection string not found");
+            var connectionString = _configuration.GetConnectionString("mongoDB");
 
             var settings = MongoClientSettings.FromConnectionString(connectionString);
             settings.ServerApi = new ServerApi(ServerApiVersion.V1);

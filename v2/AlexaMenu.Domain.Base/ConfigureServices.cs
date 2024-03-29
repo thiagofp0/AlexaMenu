@@ -8,11 +8,15 @@ namespace AlexaMenu.DependencyInjection
 {
     public static class ConfigureServices
     {
-        public static IApplicationBuilder AddAlexaMenuApiBaseSettings(this IApplicationBuilder app, IConfiguration config)
+        public static IApplicationBuilder AddAlexaMenuSwaggerSettings(this IApplicationBuilder app)
         {
             app.UseSwagger();
             app.UseSwaggerUI();
 
+            return app;
+        }
+        public static IApplicationBuilder AddAlexaMenuHttpSettings(this IApplicationBuilder app)
+        {
             app.UseMiddleware<ExceptionHandler>();
             app.UseHttpLogging();
             app.UseStaticFiles();

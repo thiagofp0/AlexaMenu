@@ -2,6 +2,7 @@ name: Construir e implantar o aplicativo .NET Core para o Aplicativo de Função
 on:
   push:
     branches:
+    - main
     - develop
 env:
   AZURE_FUNCTIONAPP_NAME: fn-alexa-menu-data-capture
@@ -47,5 +48,5 @@ jobs:
       uses: Azure/functions-action@v1
       with:
         app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
-        publish-profile: ${{ secrets.fn_alexa_menu_data_capture_A402 }}
+        publish-profile: ${{ secrets.fn_alexa_menu_data_capture_D300 }}
         package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}

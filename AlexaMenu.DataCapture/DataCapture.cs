@@ -1,6 +1,8 @@
 using AlexaMenu.Domain.CommandObject;
 using AlexaMenu.Domain.Interfaces;
 using AutoMapper;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Logging;
 
@@ -26,8 +28,8 @@ namespace AlexaMenu.DataCapture
         {
             _logger.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
 
-            var teste = await _universityService.GetMenu(DateTime.Now);
-            var menuSaveCommandObject = _mapper.Map<MenuSaveCommandObject>(teste);
+            var menu = await _universityService.GetMenu(DateTime.Now);
+            var menuSaveCommandObject = _mapper.Map<MenuSaveCommandObject>(menu);
             _menuRepository.Set(menuSaveCommandObject);
         }
     }

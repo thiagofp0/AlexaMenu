@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F94A722A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlexaMenu.Domain.UnitTests", "AlexaMenu.Domain.Base.UnitTests\AlexaMenu.Domain.UnitTests.csproj", "{97F70663-1056-4B37-B64A-F83B6AB2D949}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlexaMenu.DataCapture", "AlexaMenu.DataCapture\AlexaMenu.DataCapture.csproj", "{F850A844-5558-4823-AED5-8C596532E813}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlexaMenu.DataCapture", "AlexaMenu.DataCapture\AlexaMenu.DataCapture.csproj", "{F850A844-5558-4823-AED5-8C596532E813}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

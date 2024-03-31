@@ -7,6 +7,7 @@ builder.Logging.AddLogginServices();
 builder.Services.AddAlexaMenuApiBaseServices();
 builder.Services.AddMongoDBServices();
 builder.Services.AddAutoMapper(typeof(MapProfile));
+builder.Services.AddAutoMapper(typeof(CaptureMapProfile));
 
 var app = builder.Build();
 

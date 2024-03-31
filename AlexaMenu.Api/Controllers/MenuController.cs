@@ -19,7 +19,7 @@ namespace AlexaMenu.Api.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet(Name = "GetMenu")]
+        [HttpGet(Name = "get-menu")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -30,7 +30,7 @@ namespace AlexaMenu.Api.Controllers
             return new OkObjectResult(menu);
         }
 
-        [HttpPost(Name = "SetMenu")]
+        [HttpPost(Name = "set-menu")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]

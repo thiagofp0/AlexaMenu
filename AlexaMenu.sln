@@ -17,8 +17,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F94A722A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlexaMenu.Domain.UnitTests", "AlexaMenu.Domain.Base.UnitTests\AlexaMenu.Domain.UnitTests.csproj", "{97F70663-1056-4B37-B64A-F83B6AB2D949}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlexaMenu.DataCapture", "AlexaMenu.DataCapture\AlexaMenu.DataCapture.csproj", "{F850A844-5558-4823-AED5-8C596532E813}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,10 +43,6 @@ Global
 		{97F70663-1056-4B37-B64A-F83B6AB2D949}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97F70663-1056-4B37-B64A-F83B6AB2D949}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97F70663-1056-4B37-B64A-F83B6AB2D949}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F850A844-5558-4823-AED5-8C596532E813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F850A844-5558-4823-AED5-8C596532E813}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F850A844-5558-4823-AED5-8C596532E813}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F850A844-5558-4823-AED5-8C596532E813}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,7 +53,6 @@ Global
 		{839C7D4D-BC5D-46A4-8160-F6C15C5D6B3E} = {AD22A919-9DFD-4323-B054-370CB32AFA0A}
 		{7D627671-7B88-407B-9E29-847B4C17B677} = {AD22A919-9DFD-4323-B054-370CB32AFA0A}
 		{97F70663-1056-4B37-B64A-F83B6AB2D949} = {F94A722A-65D7-4FB2-927B-365917E45971}
-		{F850A844-5558-4823-AED5-8C596532E813} = {AD22A919-9DFD-4323-B054-370CB32AFA0A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8D36FBD1-3674-42D0-A2E6-93F5450D26CC}

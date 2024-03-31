@@ -32,6 +32,7 @@ namespace AlexaMenu.Api.Mapping
             CreateMap<MenuApiModel, MenuSaveCommandObject>()
                 .ConstructUsing(src => new MenuSaveCommandObject(MapMeals(src.Meals), src.Date))
                 .ForAllMembers(opt => opt.Ignore());
+
         }
         List<Meal> MapMeals(List<MealApiModel> mealApiModel)
         {

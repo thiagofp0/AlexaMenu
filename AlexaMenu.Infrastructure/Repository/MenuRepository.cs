@@ -9,6 +9,7 @@ using AutoMapper;
 using Microsoft.Extensions.Configuration;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
+using System.Globalization;
 
 namespace AlexaMenu.Infrastructure.Repository
 {
@@ -33,7 +34,8 @@ namespace AlexaMenu.Infrastructure.Repository
         
         public async Task<Menu> Get(DateTime date)
         {
-            var filter = Builders<MenuDocumentModel>.Filter.Eq(x => x.Date, date!.Date.ToShortDateString());
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("pt-BR");
+            var filter = Builders<MenuDocumentModel>.Filter.Eq(x => x.Date.ToString(), date!.Date.ToShortDateString());
             var result = await _collection.FindAsync(filter).Result.FirstOrDefaultAsync();
             var teste = _mapper.Map<Menu>(result);
             return result == null ? throw new NoResultsException("Menu not found.") : _mapper.Map<Menu>(result);

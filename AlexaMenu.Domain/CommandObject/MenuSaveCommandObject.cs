@@ -1,5 +1,4 @@
-﻿using AlexaMenu.Domain.Base.Exceptions;
-using AlexaMenu.Domain.Base.Models;
+﻿using AlexaMenu.Domain.Base.Models;
 using AlexaMenu.Domain.Entities;
 
 namespace AlexaMenu.Domain.CommandObject
@@ -12,14 +11,14 @@ namespace AlexaMenu.Domain.CommandObject
         public MenuSaveCommandObject(List<Meal> meals, DateTime date)
         {
             if (meals == null || meals.Count == 0)
-                throw new InvalidDomainStateException("Meals list can't be empty");
+                AddNotification("Meals list can't be empty");
             
             if (string.IsNullOrEmpty(date.ToString()))
-                throw new InvalidDomainStateException("Date can't be empy");
+                AddNotification("Date can't be empy");
 
             Validate();
             
-            Meals = meals;
+            Meals = meals!;
             Date = date;
         }
     }

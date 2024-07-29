@@ -16,7 +16,7 @@ namespace AlexaMenu.AlexaInterface.Api.Controllers
             _menuProvider = menuProvider;
         }
 
-        [HttpPost(Name = "menu")]
+        [HttpPost("menu")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

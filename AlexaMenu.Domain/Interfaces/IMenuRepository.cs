@@ -1,7 +1,6 @@
 ﻿using AlexaMenu.Domain.CommandObject;
 using AlexaMenu.Domain.Entities;
 
-
 namespace AlexaMenu.Domain.Interfaces
 {
     public interface IMenuRepository

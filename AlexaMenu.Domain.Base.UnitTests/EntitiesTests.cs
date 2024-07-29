@@ -1,7 +1,7 @@
 using AlexaMenu.Domain.Base.Exceptions;
 using AlexaMenu.Domain.Entities;
 
-namespace AlexaMenu.Domain.Base.UnitTests
+namespace AlexaMenu.Domain.UnitTests
 {
     public class EntitiesTests
     {

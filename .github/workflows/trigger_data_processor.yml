@@ -2,7 +2,7 @@ name: Daily Data Capture Call
 
 on:
   schedule:
-    - cron: "0 4 * * *" # Run every day at 4:00 UTC
+    - cron: "56 02 * * *" # Run every day at 23:55 UTC
 
 jobs:
   call-api:

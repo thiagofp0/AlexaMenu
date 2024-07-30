@@ -1,8 +1,9 @@
 name: Daily Data Capture Call
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: "59 23 * * *" # Run every day at 23:55 UTC
+    - cron: "16 21 * * *"
 
 jobs:
   call-api:

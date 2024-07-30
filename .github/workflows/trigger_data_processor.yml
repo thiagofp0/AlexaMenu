@@ -3,7 +3,7 @@ name: Daily Data Capture Call
 on:
   workflow_dispatch:
   schedule:
-    - cron: "23 22 * * *"
+    - cron: "*/5 * * * *"
 
 jobs:
   call-api:

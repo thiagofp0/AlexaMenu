@@ -21,7 +21,7 @@ namespace AlexaMenu.Api.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet("get-ufv-menu")]
+        [HttpPost("get-ufv-menu")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

@@ -3,7 +3,7 @@ name: Daily Data Capture Call
 on:
   workflow_dispatch:
   schedule:
-    - cron: "20 21 * * *"
+    - cron: "21 22 * * *"
 
 jobs:
   call-api:
@@ -16,4 +16,4 @@ jobs:
       - name: Call API with date parameter
         run: |
           echo "Calling API with date: ${{ env.date }}"
-          curl -X POST "https://ufvmenudataprocessor.azurewebsites.net/api/get-ufv-menu?date=${{ env.date }}"
+          curl -X GET "https://ufvmenudataprocessor.azurewebsites.net/api/get-ufv-menu?date=${{ env.date }}"

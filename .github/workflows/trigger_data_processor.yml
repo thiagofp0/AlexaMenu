@@ -5,6 +5,7 @@ on:
   schedule:
     - cron: "0 4 * * *"
 
+
 jobs:
   call-api:
     runs-on: ubuntu-latest
@@ -16,4 +17,4 @@ jobs:
       - name: Call API with date parameter
         run: |
           echo "Calling API with date: ${{ env.date }}"
-          curl -X POST "https://ufvmenudataprocessor.azurewebsites.net/api/DataCapture?date=${{ env.date }}"
+          curl -X POST "https://ufvmenudataprocessor.azurewebsites.net/api/get-ufv-menu?date=${{ env.date }}"

@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace AlexaMenu.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api")]
     [ApiController]
     public class DataCaptureController : ControllerBase
     {
@@ -21,7 +21,7 @@ namespace AlexaMenu.Api.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet(Name = "get-ufv-menu")]
+        [HttpGet("get-ufv-menu")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

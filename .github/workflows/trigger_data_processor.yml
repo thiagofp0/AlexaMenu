@@ -16,4 +16,4 @@ jobs:
       - name: Call API with date parameter
         run: |
           echo "Calling API with date: ${{ env.date }}"
-          curl -X POST "https://ufvmenudataprocessor.azurewebsites.net/api/DataCapture?date=${{ env.date }}"
+          curl -X POST "https://ufvmenudataprocessor.azurewebsites.net/api/get-ufv-menu?date=${{ env.date }}"

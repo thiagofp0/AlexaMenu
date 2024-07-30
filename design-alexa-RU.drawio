@@ -1,0 +1,135 @@
+<mxfile host="app.diagrams.net" modified="2023-08-31T03:09:46.659Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="hGRiOq_893YyFxjtEkgR" version="21.7.1" type="device">
+  <diagram name="Página-1" id="xTHyaXP3TtM2jjibTxcM">
+    <mxGraphModel dx="1434" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-17" value="" style="rounded=0;whiteSpace=wrap;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="70" width="790" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-1" value="Design atual" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="321" y="30" width="186" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-2" value="API RU UFV" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="90" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.875;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FzWNlWGnKpsSqZs4l5TT-3" target="FzWNlWGnKpsSqZs4l5TT-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-3" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/App_Services.svg;" vertex="1" parent="1">
+          <mxGeometry x="382" y="98" width="64" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-4" value="API&lt;br&gt;(Interface com alexa)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="356" y="170" width="116" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.16;exitY=0.55;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.025;entryY=0.559;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FzWNlWGnKpsSqZs4l5TT-5" target="FzWNlWGnKpsSqZs4l5TT-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-5" value="AWS Alexa" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="90" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="FzWNlWGnKpsSqZs4l5TT-6" target="FzWNlWGnKpsSqZs4l5TT-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-6" value="Echo Dot" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="550" y="298" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.492;entryY=1.013;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FzWNlWGnKpsSqZs4l5TT-7" target="FzWNlWGnKpsSqZs4l5TT-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="740" y="230" />
+              <mxPoint x="679" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-7" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" vertex="1" parent="1">
+          <mxGeometry x="707.18" y="269" width="65.64" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-8" value="Alexa App" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="700" y="318" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-19" value="Proposta de melhoria" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="321" y="480" width="186" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-20" value="" style="rounded=0;whiteSpace=wrap;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" vertex="1" parent="1">
+          <mxGeometry x="19" y="520" width="790" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-21" value="&lt;h1&gt;Problemas:&lt;/h1&gt;&lt;p&gt;- Demora muito para obter resposta do servidor da UFV&lt;/p&gt;&lt;p&gt;- Não possui nenhum sistema de redundância dos dados&lt;/p&gt;&lt;p&gt;- Não possui nenhum tipo de persistência dos dados&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="235" width="190" height="162" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-22" value="API RU UFV" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="545" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FzWNlWGnKpsSqZs4l5TT-23" target="FzWNlWGnKpsSqZs4l5TT-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.031;entryY=0.469;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FzWNlWGnKpsSqZs4l5TT-23" target="FzWNlWGnKpsSqZs4l5TT-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.4;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FzWNlWGnKpsSqZs4l5TT-23" target="FzWNlWGnKpsSqZs4l5TT-22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="274" y="540" />
+              <mxPoint x="88" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-23" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Function_Apps.svg;" vertex="1" parent="1">
+          <mxGeometry x="240" y="555" width="68" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-24" value="Timer trigger" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="236" y="615" width="76" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.07;exitY=0.4;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.969;entryY=0.359;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FzWNlWGnKpsSqZs4l5TT-27" target="FzWNlWGnKpsSqZs4l5TT-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-27" value="AWS Alexa" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="635" y="546.5" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.55;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FzWNlWGnKpsSqZs4l5TT-28" target="FzWNlWGnKpsSqZs4l5TT-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-28" value="Echo Dot" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="565" y="754.5" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FzWNlWGnKpsSqZs4l5TT-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="620" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="755" y="690" />
+              <mxPoint x="701" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-29" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" vertex="1" parent="1">
+          <mxGeometry x="722.18" y="725.5" width="65.64" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-30" value="Alexa App" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="715" y="774.5" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-31" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.mongodb" vertex="1" parent="1">
+          <mxGeometry x="194.8" y="718.3" width="41.2" height="86.2" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-32" value="MongoDB Cluster" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="185.4" y="804.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-43" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="414" y="555" width="116" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-25" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/App_Services.svg;" vertex="1" parent="FzWNlWGnKpsSqZs4l5TT-43">
+          <mxGeometry x="26" width="64" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-26" value="API&lt;br&gt;(Interface com alexa)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="FzWNlWGnKpsSqZs4l5TT-43">
+          <mxGeometry y="72" width="116" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FzWNlWGnKpsSqZs4l5TT-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FzWNlWGnKpsSqZs4l5TT-26" target="FzWNlWGnKpsSqZs4l5TT-31">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="472" y="761" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
